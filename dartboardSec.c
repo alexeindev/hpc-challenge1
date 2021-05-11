@@ -22,7 +22,7 @@ double Dartboard(long numShots){
 } 
 
 int main()
-{   long n = 100000;
+{   long n = 30000000;
     int iterations = 10;
     double sum = 0.0; 
     struct timespec begin, end;
@@ -48,6 +48,6 @@ int main()
     long seconds = end.tv_sec - begin.tv_sec;
     long nanoseconds = end.tv_nsec - begin.tv_nsec;
     double elapsed = seconds + nanoseconds * 1e-9;
-    printf("result %lf elapsed %lf\n", mean_result ,elapsed);
+    printf("%lf\n", elapsed);
 
 }
